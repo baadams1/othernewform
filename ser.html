@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Form Manager</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                
+				<link rel="stylesheet" type="text/css" href="styles/task4.css" media="screen" />
+
+                <style type="text/css">
+                    .centered
+                    {
+                        float: none;
+                        margin: 0 auto;
+                    }
+
+                    #userInfoTable th {
+                        background-color: teal;
+                        color: lightyellow;
+                        text-align: center;
+                    }     
+
+                    .cLightyellow {
+                        background-color: lightyellow;
+                    }      
+
+                    .fSize08 {
+                        font-size: .8em !important;
+                    }         
+                </style>
+
+                
+        </head>
+        <body>
+               
+                <div class = "navbar navbar-inverse navbar-static-top">
+                        <div class = "container">
+                               
+                                <a href = "#" class = "navbar-brand">CCU Form App v1.0</a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right">
+                                       
+                                                <li class = "active"><a href = "index.html">Home</a></li>
+                                                
+                                                <li class = "dropdown">
+                                                       
+                                                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
+                                                        <ul class = "dropdown-menu">
+                                                                <li><a href = "http://twitter.com">Twitter</a></li>
+                                                                <li><a href = "http://facebook.com">Facebook</a></li>
+                                                                <li><a href = "http://plus.google.com">Google+</a></li>
+                                                                <li><a href = "http://instagram.com">Instagram</a></li>
+                                                        </ul>
+                                               
+                                                </li>
+
+												<li class = "dropdown">
+												
+													<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Forms<b class = "caret"></b></a>
+													<ul class = "dropdown-menu">
+
+													</ul>
+												</li>
+                                                <li><a href = "#about" data-toggle="modal">About</a></li>
+                                                <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+												<li>
+														<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>
+							</form>
+							</li>
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+               
+                <div class = "container">
+               
+                        <div class = "jumbotron">
+                        
+                                <center>
+                                    <h2>Special Permission to Enroll in Class(es)</h2>
+                                </center>
+                                <div><p>Please fill the required information</p>
+                                    <table id="userInfoTable" class="table">
+                                        <tbody>
+											 <td>
+                                                    <label for="t_ser_year">Year</label>
+												</td>
+												<td><strong>
+													<input id="t_ser_year" type="text" class="form-control" placeholder="Year">
+												</td></strong>
+											
+											<form action="">
+												<label for="">Term: </label>
+												<input type="checkbox" name="form" value="spring">Spring
+												<input type="checkbox" name="form" value="may">May Semester 
+												<input type="checkbox" name="form" value="summer1">Summer I 
+												<input type="checkbox" name="form" value="summer2">Summer II 
+												<input type="checkbox" name="form" value="fall">Fall
+											</form>
+                                            <tr>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="t_ser_userFirstName">First Name</label>
+                                                </td>
+                                                <td><strong>
+                                                    <input id="t_ser_userFirstName" type="text" class="form-control" placeholder="First Name">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userLastName">Last Name</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userLastName" type="text" class="form-control" placeholder="Last Name">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userMiddleName">Middle Name</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userMiddleName" type="text" class="form-control" placeholder="Middle Name">
+                                                </td></strong>
+                                            
+                                                <td>
+                                                    <label for="t_ser_userUserId">Student ID Number</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userUserId" type="text" class="form-control" placeholder="User Id">
+                                                </td></strong>
+												</tr>
+												
+                                            <tr>
+                                                
+                                            </tr>
+											<td>
+                                                    <label for="t_ser_userStudentSignature">Student signature</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userStudentSignature" type="text" class="form-control" placeholder="Signature">
+                                                </td></strong>
+												
+											<td>
+                                                    <label for="t_ser_userDate">Date</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userDate" type="datetime" class="form-control" placeholder="date">
+                                                </td></strong>	
+											<tr>
+											
+											</tr>
+											<td>
+											
+                                                    <label for="t_ser_userAdvisersSignature">Adviser signature</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userAdviserSignature" type="text" class="form-control" placeholder="Signature">
+                                                </td></strong>
+												
+											<tr>
+											
+											</tr>
+											
+												<td>
+											
+                                                    <label for="t_ser_userStudentMajor">Student Major</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userStudentMajor" type="text" class="form-control" placeholder=" Major">
+                                                </td></strong>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                
+							
+
+                                <div class ="text pull-center"></div>
+                        
+				</div>
+            </div>
+			
+               
+       
+	
+                <div class = "container">
+               
+                        <div class = "jumbotron">
+						
+						
+						</div>
+				</div>
+		
+
+                <div class = "navbar navbar-inverse navbar-fixed-bottom">
+               
+                        <div class = "container">
+                                <p class = "navbar-text pull-left">Site Built By Bobby Jasmine, Charles, Aydin</p>
+                                <a href = "http://www.coastal.edu" target = "_blank" class = "navbar-btn btn-success btn pull-right">CCU</a>
+                        </div>
+               
+                </div>
+				
+                <div class = "modal fade" id = "contact" role = "dialog">
+                    <div class = "modal-dialog">
+                        <div class = "modal-content">
+							<form class = "form-horizontal">
+								<div class = "modal-header">
+									<h4>Contact</h4>
+								</div>
+								<div class = "modal-body">
+                                 <div class = "form-group">
+                                       
+                                        <label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                    <div class = "form-group">
+                                       
+                                        <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                    <div class = "form-group">
+                                       
+                                        <label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <textarea class = "form-control" rows = "8"></textarea>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class = "modal-footer">
+                        <a class = "btn btn-default" data-dismiss = "modal">Close</a>    
+                                <a class = "btn btn-primary" data-dismiss = "modal">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class = "modal fade" id = "about" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<form class = "form-horizontal">
+						<div class = "modal-header">
+							<h4>About</h4>
+						</div>
+						<div class = "modal-body">
+							<div class ="form-group">
+								<p>This site is for you to manage all your task at all times. It is accessible whenever you need it!!!</p>
+							</div>
+							<div class = "modal-footer">
+								<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+                <script src = "js-forms/user-crud.js"></script>
+                <script>
+                    fillSERInfoFields();
+                </script>
+               
+        </body>
+</html>

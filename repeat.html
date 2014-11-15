@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Form Manager</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href = "css/bootstrap.min.css" rel = "stylesheet">
+                
+				<link rel="stylesheet" type="text/css" href="styles/task4.css" media="screen" />
+
+                <style type="text/css">
+                    .centered
+                    {
+                        float: none;
+                        margin: 0 auto;
+                    }
+
+                    #userInfoTable th {
+                        background-color: teal;
+                        color: lightyellow;
+                        text-align: center;
+                    }     
+
+                    .cLightyellow {
+                        background-color: lightyellow;
+                    }      
+
+                    .fSize08 {
+                        font-size: .8em !important;
+                    }         
+                </style>
+
+                
+        </head>
+        <body>
+               
+                <div class = "navbar navbar-inverse navbar-static-top">
+                        <div class = "container">
+                               
+                                <a href = "#" class = "navbar-brand">CCU Form App v1.0</a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right">
+                                       
+                                                <li class = "active"><a href = "index.html">Home</a></li>
+                                                
+                                                <li class = "dropdown">
+                                                       
+                                                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media <b class = "caret"></b></a>
+                                                        <ul class = "dropdown-menu">
+                                                                <li><a href = "http://twitter.com">Twitter</a></li>
+                                                                <li><a href = "http://facebook.com">Facebook</a></li>
+                                                                <li><a href = "http://plus.google.com">Google+</a></li>
+                                                                <li><a href = "http://instagram.com">Instagram</a></li>
+                                                        </ul>
+                                               
+                                                </li>
+
+												<li class = "dropdown">
+												
+													<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Forms<b class = "caret"></b></a>
+													<ul class = "dropdown-menu">
+
+													</ul>
+												</li>
+                                                <li><a href = "#about" data-toggle="modal">About</a></li>
+                                                <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+												<li>
+														<form class="navbar-form" role="search">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+								</div>
+							</div>
+							</form>
+							</li>
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+               
+                <div class = "container">
+               
+                        <div class = "jumbotron">
+                        
+                                <center>
+                                    <h2>Course Repeat Request</h2>
+                                    <h3>Office of the Registrar</h3>
+                                </center>
+                                <div><p>Please fill the required information</p>
+									<p>Student Information</p>
+                                    <table id="userInfoTable" class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label for="t_ser_userFirstName">First Name</label>
+                                                </td>
+                                                <td><strong>
+                                                    <input id="t_ser_userFirstName" type="text" class="form-control" placeholder="First Name">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userLastName">Last Name</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userLastName" type="text" class="form-control" placeholder="Last Name">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userMiddleName">Middle Name</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userMiddleName" type="text" class="form-control" placeholder="Middle Name">
+                                                </td></strong>
+                                            </tr>
+                                                <td>
+                                                    <label for="t_ser_userUserId">Student ID Number</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userUserId" type="text" class="form-control" placeholder="User Id">
+                                                </td></strong>
+												
+												  <td>
+                                                    <label for="t_ser_userTelephoneNumber">Telephone Number</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userTelephoneNumber" type="text" class="form-control" placeholder="Telephone Number">
+                                                </td></strong>
+                                            <tr>
+                                                
+                                            </tr>
+											  <td>
+                                                    <label for="t_ser_userlocalAdd">Local Address</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userLocalAdd" type="text" class="form-control" placeholder="address">
+                                                </td></strong>
+												
+												  <td>
+                                                    <label for="t_ser_userCity">City</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userCity" type="text" class="form-control" placeholder="City">
+                                                </td></strong>
+												
+												  <td>
+                                                    <label for="t_ser_userState">State</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userState" type="text" class="form-control" placeholder="State">
+                                                </td></strong>
+												
+												  <td>
+                                                    <label for="t_ser_userZipCode">Zip code</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userZipCode" type="text" class="form-control" placeholder="zip code">
+                                                </td></strong>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-lg-18 centered" >
+                                    <div class="cLightyellow">
+                                        <blockquote>
+                                            <h3>PLEASE NOTE:</h3>
+                                            <p class="fSize08">1. For the course specified as being repeated, Coastal Carolina University will exclude the grade and credit hours earned when calculating the student's cumulative GPA and earned credit hours.</p>
+                                            <p class="fSize08">2. A course that has been repeated will count only once towards meeting graduation requirements. </p>
+                                            <p class="fSize08">3. All grades (original and repeat) will appear on the transcript and be used in the calculation of graduation with honors.</p>
+                                            <p class="fSize08"> Professional schools, graduate programs, and future employers may apply their own criteria that may not recognize a "repeat forgiveness" option in evaluating credentials for prospective students and employees.</p>                                            
+											<p class="fSize08"> For financial aid and scholarship purposes, duplicate credits do not count as credits completed for satisfactory academic progress except in certain cases.</p>
+										</blockquote>
+                                    </div>
+
+                                </div>                                
+							
+						
+						 <center>
+                                    
+                                </center>
+                                <div>
+									<p>Course Information</p>
+                                    <table id="userInfoTable" class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label for="t_ser_userCourse">Course to be repeated(example: ENGL 101)</label>
+                                                </td>
+                                                <td><strong>
+                                                    <input id="t_ser_userCourse" type="text" class="form-control" placeholder="Course">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userTerm">Term course was taken</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userTerm" type="text" class="form-control" placeholder="Term">
+                                                </td></strong>
+
+                                                <td>
+                                                    <label for="t_ser_userGrade">Grade earned</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userGrade" type="text" class="form-control" placeholder="Grade">
+                                                </td></strong>
+                                            </tr>
+                                                <td>
+                                                    <label for="t_ser_userRepeat">Term course is being repeated</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userRepeat" type="text" class="form-control" placeholder="Term repeat">
+                                                </td></strong>
+												
+												  <td>
+                                                    <label for="t_ser_userStudentSign">Student Signature</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userStudentSign" type="text" class="form-control" placeholder="Student Sign">
+                                                </td></strong>
+                                            <tr>
+                                                
+                                            </tr>
+											  <td>
+                                                    <label for="t_ser_userDate">Date</label>
+                                                </td>                                                
+                                                <td><strong>
+                                                    <input id="t_ser_userDate" type="text" class="form-control" placeholder="Date">
+                                                </td></strong>
+												
+												  
+												
+												 
+                                        </tbody>
+                                    </table>
+						
+                                <div class ="text pull-center"></div>
+                        
+               
+                </div>
+               
+       
+		
+		
+
+                <div class = "navbar navbar-inverse navbar-fixed-bottom">
+               
+                        <div class = "container">
+                                <p class = "navbar-text pull-left">Site Built By Bobby Jasmine, Charles, Aydin</p>
+                                <a href = "http://www.coastal.edu" target = "_blank" class = "navbar-btn btn-success btn pull-right">CCU</a>
+                        </div>
+               
+                </div>
+				
+                <div class = "modal fade" id = "contact" role = "dialog">
+                    <div class = "modal-dialog">
+                        <div class = "modal-content">
+							<form class = "form-horizontal">
+								<div class = "modal-header">
+									<h4>Contact</h4>
+								</div>
+								<div class = "modal-body">
+                                 <div class = "form-group">
+                                       
+                                        <label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <input type = "text" class = "form-control" id = "contact-name" placeholder = "Full Name">
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                    <div class = "form-group">
+                                       
+                                        <label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <input type = "email" class = "form-control" id = "contact-email" placeholder = "you@example.com">
+                                           
+                                        </div>
+                                       
+                                    </div>
+                                   
+                                    <div class = "form-group">
+                                       
+                                        <label for = "contact-msg" class = "col-lg-2 control-label">Message:</label>
+                                        <div class = "col-lg-10">
+                                           
+                                            <textarea class = "form-control" rows = "8"></textarea>
+                                           
+                                        </div>
+                                       
+                                    </div>
+                            </div>
+                            <div class = "modal-footer">
+                        <a class = "btn btn-default" data-dismiss = "modal">Close</a>    
+                                <a class = "btn btn-primary" data-dismiss = "modal">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class = "modal fade" id = "about" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<form class = "form-horizontal">
+						<div class = "modal-header">
+							<h4>About</h4>
+						</div>
+						<div class = "modal-body">
+							<div class ="form-group">
+								<p>This site is for you to manage all your task at all times. It is accessible whenever you need it!!!</p>
+							</div>
+							<div class = "modal-footer">
+								<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+                <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                <script src = "js/bootstrap.js"></script>
+                <script src = "js-forms/user-crud.js"></script>
+                <script>
+                    fillSERInfoFields();
+                </script>
+               
+        </body>
+</html>
